@@ -1,0 +1,30 @@
+<div class="long-title"><h3>Employee Details</h3></div>
+<div id="form-container">
+  <dx-form
+    [colCount]="2"
+    [formData]="employee"
+    (onFieldDataChanged)="onFieldDataChanged($event)"
+  >
+    <dxi-item dataField="FirstName"></dxi-item>
+    <dxi-item
+      dataField="Position"
+      editorType="dxSelectBox"
+      [editorOptions]="{ items: positions }"
+    >
+    </dxi-item>
+    <dxi-item dataField="LastName"></dxi-item>
+    <dxi-item
+      dataField="HireDate"
+      editorType="dxDateBox"
+      [editorOptions]="hireDateOptions"
+    >
+    </dxi-item>
+    <dxi-item
+      dataField="BirthDate"
+      editorType="dxDateBox"
+      [editorOptions]="{ width: '100%' }"
+    ></dxi-item>
+    <dxi-item dataField="Address" [visible]="isVisible"></dxi-item>
+  </dx-form>
+</div>
+
