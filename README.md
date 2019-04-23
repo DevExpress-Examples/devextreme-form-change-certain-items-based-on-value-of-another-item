@@ -6,6 +6,6 @@ The main idea is to change the [visible](https://js.devexpress.com/Documentation
 
 In our particular case, we hide the **Address** form item and disable the **Hire Date** item editor when the **Position** form item value is set to "CEO". Take a look at the following files of this example to see the required code: 
 
-**app.component.html**
+[app.component.html](https://github.com/DevExpress-Examples/how-to-change-certain-Form-items-based-on-a-value-of-another-item/blob/18.2.7%2B/src/app/app.component.html)
 
-**app.component.ts**
+[app.component.ts](https://github.com/DevExpress-Examples/how-to-change-certain-Form-items-based-on-a-value-of-another-item/blob/18.2.7%2B/src/app/app.component.ts)
