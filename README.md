@@ -20,14 +20,14 @@ In our particular case, we hide the **Address** form item and disable the **Hire
     - [app.component.html](angular/src/app/app.component.html)
     - [app.component.ts](angular/src/app/app.component.ts)
 - **jQuery**
-    - [index.js](jquery/src/index.js)
+    - [index.js](jquery/index.js)
 - **React**
-    - [App.js](react/src/App.jsx)
+    - [App.js](react/src/App.js)
 - **Vue**
     - [App.vue](vue/src/App.vue)
 
 ## Documentation
 
-- [Getting Started with Form](https://js.devexpress.com/Documentation/Guide/UI_Components/Scheduler/Getting_Started_with_Form/)
+- [Getting Started with Form](https://js.devexpress.com/Documentation/Guide/UI_Components/Form/Getting_Started_with_Form/)
 
 - [Form - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxForm/)
