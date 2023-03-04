@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# DevExtreme Form - How to change certain Form items based on a value of another item
+# Form for DevExtreme - How to change certain Form items based on a value of another item
 
 This example demonstrates how to show/hide or enable/disable form items based on a value of another item. 
 
