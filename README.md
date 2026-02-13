@@ -33,7 +33,7 @@ In our particular case, we hide the **Address** form item and disable the **Hire
 
 - [Form - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxForm/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-form-change-certain-items-based-on-value-of-another-item&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-form-change-certain-items-based-on-value-of-another-item&~~~was_helpful=no)
 
