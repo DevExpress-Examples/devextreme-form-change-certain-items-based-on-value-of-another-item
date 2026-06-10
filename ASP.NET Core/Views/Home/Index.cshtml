@@ -1,0 +1,48 @@
+@using ASP_NET_Core.Models
+@model Employee
+
+<div class="long-title"><h3>Employee Details</h3></div>
+
+@(Html.DevExtreme().Form<Employee>()
+    .ID("form")
+    .ColCount(2)
+    .FormData(Model)
+    .CustomizeItem("customizeItem")
+    .OnFieldDataChanged("onFieldDataChanged")
+    .Items(items => {
+        items.AddSimpleFor(m => m.FirstName);
+        items.AddSimpleFor(m => m.Position)
+            .Editor(e => e.SelectBox().DataSource(Employee.Positions));
+        items.AddSimpleFor(m => m.LastName);
+        items.AddSimpleFor(m => m.HireDate)
+            .Editor(e => e.DateBox().Width("100%"));
+        items.AddSimpleFor(m => m.BirthDate)
+            .Editor(e => e.DateBox().Width("100%"));
+        items.AddSimpleFor(m => m.Address);
+    })
+)
+
+<script>
+    function getPosition() {
+        const form = $("#form").dxForm("instance");
+        return form ? form.option("formData").Position : "@Model.Position";
+    }
+
+    function customizeItem(item) {
+        if (item.dataField === "Address") {
+            item.visible = getPosition() !== "CEO";
+        }
+        if (item.dataField === "HireDate") {
+            if (!item.editorOptions) {
+                item.editorOptions = {};
+            }
+            item.editorOptions.disabled = getPosition() === "CEO";
+        }
+    }
+
+    function onFieldDataChanged(e) {
+        if (e.dataField === "Position") {
+            e.component.repaint();
+        }
+    }
+</script>
