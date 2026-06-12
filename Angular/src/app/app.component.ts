@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DxFormModule, DxFormTypes } from 'devextreme-angular/ui/form';
 import { Employee, Service } from './app.service';
 
@@ -7,6 +7,7 @@ import { Employee, Service } from './app.service';
     imports: [DxFormModule],
     providers: [Service],
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
